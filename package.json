@@ -1,0 +1,23 @@
+{
+  "name": "netsuite-api",
+  "version": "1.0.0",
+  "description": "A NodeJS utility library to interact with NetSuite's SuiteTalk & REST webservices.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/budysutjijati/netsuite-api.git"
+  },
+  "author": "Budy Sutjijati",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/budysutjijati/netsuite-api/issues"
+  },
+  "homepage": "https://github.com/budysutjijati/netsuite-api#readme",
+  "dependencies": {
+    "axios": "^1.5.0",
+    "oauth-1.0a": "^2.2.6"
+  }
+}
