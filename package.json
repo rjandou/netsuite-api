@@ -1,6 +1,6 @@
 {
   "name": "netsuite-api",
-  "version": "1.0.0",
+  "version": "1.0.4b",
   "description": "A NodeJS utility library to interact with NetSuite's SuiteTalk & REST webservices.",
   "main": "index.js",
   "scripts": {
