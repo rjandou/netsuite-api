@@ -1,5 +1,8 @@
 # Netsuite-API
 
+[![Known Vulnerabilities](https://snyk.io/test/github/budysutjijati/netsuite-api/badge.svg?targetFile=package.json)](https://snyk.io/test/github/budysutjijati/netsuite-api?targetFile=package.json)
+
+
 The NetSuite API Node.js library facilitates seamless interaction with the NetSuite SuiteTalk Web Services, offering a structured way to make API calls for retrieving or sending data. Leveraging the OAuth 1.0a authentication method, it ensures secure communication between your Node.js application and the NetSuite platform. This library abstracts the intricacies of handling OAuth signatures and HTTP methods, providing a cleaner and more streamlined way to interact with NetSuite's API endpoints.
 
 ## Installation
