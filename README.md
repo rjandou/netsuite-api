@@ -1,4 +1,4 @@
-# Netsuite-API
+# NetSuite-API
 
 [![Known Vulnerabilities](https://snyk.io/test/github/budysutjijati/netsuite-api/badge.svg?targetFile=package.json)](https://snyk.io/test/github/budysutjijati/netsuite-api?targetFile=package.json)
 
@@ -39,7 +39,7 @@ const netSuiteAPI = new NetSuiteAPI(config);
 Use the post method to create a (custom) record:
 
 ```javascript
-const postRequest = await client.post({
+const postRequest = await netsuiteAPI.post({
     url: 'https://ACCOUNT_ID.suitetalk.api.netsuite.com/services/rest/record/v1/YOUR_RECORD_TYPE',
     data: {
         name: "Record created via NetSuite-API"
@@ -51,7 +51,7 @@ const postRequest = await client.post({
 Use the get method to read a (custom) record:
 
 ```javascript
-const getRequest = await client.get({
+const getRequest = await netsuiteAPI.get({
     url: 'https://ACCOUNT_ID.suitetalk.api.netsuite.com/services/rest/record/v1/YOUR_RECORD_TYPE/INTERNAL_ID'
 });
 ```
@@ -60,7 +60,7 @@ const getRequest = await client.get({
 Use the patch method to update a (custom) record:
 
 ```javascript
-const patchRequest = await client.patch({
+const patchRequest = await netsuiteAPI.patch({
     url: 'https://ACCOUNT_ID.suitetalk.api.netsuite.com/services/rest/record/v1/YOUR_RECORD_TYPE',
     data: {
         name: "Record updated via NetSuite-API"
@@ -72,7 +72,7 @@ const patchRequest = await client.patch({
 Use the delete method to delete a (custom) record:
 
 ```javascript
-const deleteRequest = await client.delete({
+const deleteRequest = await netsuiteAPI.delete({
     url: 'https://ACCOUNT_ID.suitetalk.api.netsuite.com/services/rest/record/v1/YOUR_RECORD_TYPE/INTERNAL_ID'
 });
 ```
