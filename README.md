@@ -16,7 +16,7 @@ npm install netsuite-api --save
 Include and configure the library in your project. It is recommended to set up an environment file to securely store your sensitive data such as API keys and secrets. You can use the `dotenv` package to help with this.
 
 ```javascript
-const NetsuiteAPI = require('netsuite-api');
+const NetSuiteAPI = require('netsuite-api');
 
 const config = {
   ACCOUNT_ID: 'your_account_id',
@@ -32,7 +32,7 @@ const config = {
 Create an instance of the NetSuiteAPI class, passing the configuration object with necessary credentials:
 
 ```javascript
-const netSuiteAPI = new NetSuiteAPI(config);
+const netsuiteAPI = new NetSuiteAPI(config);
 ```
 
 ### Making POST Requests
@@ -82,6 +82,7 @@ const deleteRequest = await netsuiteAPI.delete({
 The following is a list of features and improvements planned for an upcoming releases:
 
 - [ ] Retry logic
+- [ ] OAuth 2.0 support
 
 ## Contributing
 
