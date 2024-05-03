@@ -37,6 +37,7 @@ class NetSuiteAPI {
     headers.Authorization += `,realm="${this.config.ACCOUNT_ID}"`;
     headers.authorization = headers.Authorization;
     delete headers.Authorization;
+    headers.Prefer = "transient";
     return headers;
   }
 
@@ -59,13 +60,13 @@ class NetSuiteAPI {
       };
 
       if (
-        (method === 'POST' && response.status === 204) || 
+        (method === 'POST' && (response.status === 204 || response.status === 200)) || 
         (method === 'GET' && response.status === 200) ||
         (method === 'PATCH' && response.status === 204) ||  
         (method === 'DELETE' && response.status === 204) ) { 
             objResponse.success = true;
       } else {
-        console.error(`Something went wrong during ${method}`);
+        console.error(`Something went wrong during ${method} with ${response.status}`);
       }
 
       return objResponse;
